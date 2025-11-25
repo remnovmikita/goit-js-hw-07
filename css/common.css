@@ -19,11 +19,43 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+/*#region one*/
+#categories{
+  width: 392px;
+  height: auto;
+  padding: 0px 16px;
+
+}
+.item{
+  border: none;
+  padding: 0;
+}
+.item > ul {
+    display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.item > ul > li {
+  border: 1px solid #808080;
+border-radius: 4px;
+padding: 8px 16px;
+
+font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #2e2f42;
+}
+
+/*#endregion one*/
+
+/*#region two*/
+
 .gallery{
-  border: 1px solid tomato;
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
   
 }
 .gallery-item{
@@ -36,57 +68,112 @@ body {
    height: 100%;
    object-fit: cover;
 }
+
+/*#endregion two*/
+
+/*#region three*/
+
 #name-input{
-  padding: 10px;
+  padding: 8px 16px;
+  width: 360px;
+  height: auto;
 }
+
+#name-input::placeholder{
+  font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #2e2f42;
+}
+
+h1{
+  font-family: "Montserrat", sans-serif;
+font-weight: 600;
+font-size: 24px;
+line-height: 1.33333;
+letter-spacing: 0.04em;
+color: #2e2f42;
+}
+
+
+/*#endregion three*/
+
 
 /*#region task 4*/
 
 .login-form{
-  width: 300px;
+  width: 360px;
   height: auto;
   display: flex;
   flex-direction: column;
   padding: 20px 10px;
-  gap: 10px;
-
 }
 .login-form input{
   width: 100%;
   padding: 5px 10px;
-  margin-top: 10px;
-  border-radius: 30px;
+  margin-top: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  height: 40px;
+  margin-bottom: 8px;
 }
-.email{
-  margin-bottom: 10px;
+.login-form button{
+  font-family: "Montserrat", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+
+border: none;
+border-radius: 8px;
+padding: 8px 16px;
+width: 86px;
+height: 40px;
+transition:  background 300ms ease-in-out;
+background: #4e75ff;
+margin-top: 16px;
 }
-.password{
-  margin-bottom: 10px;
+
+.login-form button:hover{
+  background: #6c8cff;
 }
-.btn{
-  width: 100px;
-  height: auto;
-  padding: 10px 20px;
-  transition: background-color 300ms ease-in-out;
-  border: 1px solid blueviolet;
-  border-radius: 20px;
-}
-.btn:hover{
-  background-color: tomato;
-}
+
 /*#endregion task 4*/
 
 /*#region task 5*/
 
-.change-color{
-  padding: 5px 10px;
-  border-radius: 30px;
-  border: 1px solid black;
-  transition: background-color 300ms ease-in-out;
+.widget p {
+  font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #2e2f42;
 }
-.change-color:hover,
-.change-color:focus{
-  background-color: tomato;
+
+.change-color {
+  font-family: "Montserrat", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+
+border-radius: 8px;
+padding: 8px 16px;
+width: 148px;
+height: auto;
+
+border: none;
+background: #4e75ff;
+transition:  background 300ms ease-in-out;
+}
+
+.change-color:hover{
+  background: #6c8cff;
 }
 
 /*#endregion task 5*/
