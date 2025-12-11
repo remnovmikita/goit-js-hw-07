@@ -2,8 +2,9 @@ const changeBut = document.querySelector(".change-color");
 const spanCol = document.querySelector(".color");
 
 changeBut.addEventListener("click", () => {
-    spanCol.textContent = getRandomHexColor();
-    document.body.style.backgroundColor = getRandomHexColor();
+    let color = getRandomHexColor();
+    spanCol.textContent = color;
+    document.body.style.backgroundColor = color;
 })
 
 

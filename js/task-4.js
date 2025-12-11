@@ -11,10 +11,8 @@ function succes(event){
     const password = form.elements.password.value;
 
     if (email.trim() === "" || password.trim() === ""){
-        btn.style.background = "red";
         return alert('All form fields must be filled in');
     }
-        btn.style.background = "#4e75ff";
     console.log(`Email: ${email}, Password: ${password}`);
     form.reset();
 }
